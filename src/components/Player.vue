@@ -4,6 +4,7 @@
 <script setup lang="ts">
 import * as Tone from 'tone'
 const play = async () => {
+    await Tone.start()
     const player = new Tone.Player({
         url: "rain-sounds.mp3",
         loop: true,
